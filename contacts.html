@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St John's Church</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9524620b28.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+            <a href="index.html"><img src="images/cross-png-25664.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+       <h1>Contact Us</h1>
+        </section> 
+        
+        <!----contact us----->
+        
+        <section class="location">
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2280.3757821839854!2d-1.5675615228431183!3d55.141702538893284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e0d24f8baa385%3A0xc95ea19dcb3bc19b!2sSt%20John&#39;s%20Church%2C%20Sleekburn!5e0!3m2!1sen!2suk!4v1698342859241!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </section> 
+        
+        <section class="contact-us">
+        
+            <div class="row">
+            <div class="contact-col">
+                <div>
+                <i class="fa-solid fa-house"></i>
+                    <span>
+                    <h5>Station, 5 North View, Bedlington<br>NE22 7ED</h5>
+                        <p>St John's Church, Sleekburn</p>
+                    </span>
+                </div>
+                <div>
+                <i class="fa-solid fa-phone"></i>
+                    <span>
+                    <h5>01670823453</h5>
+                        <p>>Revd Ian Hennebry/Vicar</p>
+                    </span>
+                </div>
+                 <div>
+                <i class="fa-solid fa-phone"></i>
+                    <span>
+                    <h5>01670824248</h5>
+                        <p>>Chris Elder/Churchwarden and PCC Secretary</p>
+                    </span>
+                </div>
+                <div>
+                <i class="fa-solid fa-envelope"></i>
+                    <span>
+                    <h5>harrygreatrex25@gmail.com</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+                </div>
+                 <div class="contact-col">
+                
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    
+                
+                </form>
+                
+                </div>
+                
+                
+            </div>
+        </section>
+        
+        
+        
+    <!----Footer----->
+     
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Find Out More About Us</p>
+        <div class="icons">
+            <a i class="fa-brands fa-facebook"href="https://www.facebook.com/StJohnsChurchBedlingtonStation/"></a>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Harry Greatrex</p>
+    
+    </section>
+    
+        <!------JavaScript for Toggle Menu------->
+        <script>
+        
+          var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            } 
+            function hideMenu(){
+                navLinks.style.right = "-205px";
+            }
+            
+        </script>
+            </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St John's Church</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9524620b28.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+            <a href="index.html"><img src="images/cross-png-25664.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+       <h1>Our Events</h1>
+        </section>
+        
+<!----- Timings ------>
+        <section class="timings">
+        <h1>Timings</h1>
+            <p>Find out all the Timings</p> 
+            
+            <div class="row">
+                <div class="course-col">
+                    <h3>Every Thursday</h3>
+                    <p>Holy Communion<br>10:45am<br>For 45 Mins</p>
+                </div>
+                <div class="course-col">
+                    <h3>Every Sunday</h3>
+                    <p>Sunday's Service<br>10:30am<br>For 1 Hour</p>
+                </div>
+                
+                </div>
+            
+            
+        </section> 
+    
+        
+ <!-----Events----->
+        
+        <section class="events">
+        <h1>Upcoming Events</h1>
+        <p>Find out all our Upcoming Events</p>
+    
+        <div class="row">
+            <div class="events-col">
+            <img src="images/393683775_347921037795102_2828690003250517386_n.png">
+                <div class="layer">
+                <h3>An Evening With Jon Canessa.<br>Thursday, 2 November 2023.<br>19:00-21:00pm.</h3>
+                </div>
+            </div>
+            <div class="events-col">
+            <img src="images/not-applicable.png">
+                <div class="layer">
+                <h3>N/A</h3>
+                </div>
+            </div>
+                <div class="events-col">
+            <img src="images/not-applicable.png">
+                <div class="layer">
+                <h3>N/A</h3>
+                </div>
+            </div>
+        </div> 
+        
+    </section>
+   
+    <!----Footer----->
+     
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Find Out More About Us</p>
+        <div class="icons">
+            <a i class="fa-brands fa-facebook"href="https://www.facebook.com/StJohnsChurchBedlingtonStation/"></a>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Harry Greatrex</p>
+    
+    </section>
+    
+        <!------JavaScript for Toggle Menu------->
+        <script>
+        
+          var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            } 
+            function hideMenu(){
+                navLinks.style.right = "-205px";
+            }
+            
+        </script>
+            </body>
+</html>

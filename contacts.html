@@ -72,24 +72,12 @@
                 </div>
                  <div class="contact-col">
                 
-                   <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe8nRoPBWyk_gg3wK_iotuHjqyYCCD_GEXgp3OPUQIZTInwAg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                    <input type="text" name="entry.469542366" id="entry.469542366" placeholder="Enter Your Name" required>
-                    <input type="email" name="entry.1869207493" id="entry.1869207493" placeholder="Enter Email Address" required>
-                    <input type="text" name="entry.173163729" id="entry.173163729" placeholder="Enter Your Subject" required>
-                    <textarea rows="8" name="entry.489179719" id="entry.489179719" placeholder="Message" required></textarea>
+                    <form action=form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
                     <button type="submit" class="hero-btn red-btn">Send Message</button>
-                   </form>
-                    
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-                    
-                    <script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
                 
                 </form>
                 
